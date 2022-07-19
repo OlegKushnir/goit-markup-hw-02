@@ -4,14 +4,13 @@
     --title-text-color: #212121;
     --title-white-color: #ffffff;
     --title-black-color: #000000;
+    --dark-bgr:#2F303A;
 }
 body {
     font-family:Roboto, sans-serif;
     letter-spacing: 0.03em;
+    color: var(--primary-text-color);
     background-color:#ffffff;
-}
-button {
-    font-family: inherit;
 }
 
 .list {
@@ -47,24 +46,31 @@ footer .logo-studio{
     color: var(--title-text-color);
 }
 
+.nav-title:hover, 
+.nav-title:focus {
+    color: var(--accent-color);
+}
 .nav-title.current {
     color: var(--accent-color);
 }
 
 .top-contacts {
-    color: var(--primary-text-color);
+    color: inherit;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
     text-decoration: none;
 }
+.top-contacts:active, 
+.top-contacts:focus, 
 .top-contacts:hover {
     color: var(--accent-color);
 }
 
+
 .hero {
-    background-color:#2F303A;
+    background-color:var(--dark-bgr);
 }
 .hero-title {
     font-weight: 900;
@@ -76,12 +82,14 @@ footer .logo-studio{
 }
 
 .order-btn {
+    font-family: inherit;
     background-color: var(--accent-color);
     color:var(--title-white-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 .hidden-descr {
     display: none;
@@ -93,9 +101,7 @@ footer .logo-studio{
     line-height: 1.14;
 }
 .descr p {
-    font-weight: 400;
     font-size: 14px;
-    color: var(--primary-text-color);
     line-height: 1.71;
 }
 .samples h2, .team h2 {
@@ -113,40 +119,48 @@ footer .logo-studio{
     line-height: 1.18;
 }
 .team p {
-    font-weight: 400;
     font-size: 16px;
-    color: var(--primary-text-color);
     line-height: 1.18;
 }
 footer {
-    background-color: #2F303A;
-    line-height: 1.71;
+    background-color: var(--dark-bgr);
 }
 .gm-adr {
-    font-weight: 400;
     font-size: 14px;
     color: var(--title-white-color);
     font-style: normal;
     text-decoration: none;
+    line-height: 1.71;
 }
 
 .bottom-contacts {
-    font-weight: 400;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     text-decoration: none;
+    line-height: 1.71;
+}
+.gm-adr:hover, 
+.gm-adr:focus, 
+.bottom-contacts:hover, 
+.bottom-contacts:focus{
+    color: var(--accent-color);
 }
 
+
 .sort button {
+    font-family: inherit;
     background-color: var(--accent-color);
     color:var(--title-white-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    cursor: pointer;
 }
+
 .galary a {
     text-decoration: none;
+    color:inherit;
 }
 .galary h2 {
     font-weight: 700;
@@ -156,8 +170,6 @@ footer {
     line-height: 2;
 }
 .galary p {
-    font-weight: 400;
     font-size: 16px;
-    color: var(--primary-text-color);
     line-height: 1.87;
 }
