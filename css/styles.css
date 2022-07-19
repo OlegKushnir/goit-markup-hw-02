@@ -7,12 +7,14 @@
 }
 body {
     font-family:Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    background-color:#ffffff;
 }
-a {
-    text-decoration: none;
-    
+button {
+    font-family: inherit;
 }
-ul {
+
+.list {
     list-style-type: none;
 }
 
@@ -22,8 +24,8 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
+    text-decoration: none;
 }
-
 
 header .logo-studio{
     color: var(--title-black-color);
@@ -33,45 +35,53 @@ footer .logo-studio{
     color: var(--title-white-color);
 }
 
-
 .nav-title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    text-decoration: none;
 }
 .nav-title:visited {
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
 }
+
 .nav-title.current {
     color: var(--accent-color);
 }
 
-.top-mail {
-    color: var(--title-text-color);
+.top-contacts {
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    text-decoration: none;
 }
-.top-mail:hover {
+.top-contacts:hover {
     color: var(--accent-color);
 }
-.top-tel {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
+
+.hero {
+    background-color:#2F303A;
 }
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    color: var(--title-white-color);
-    background-color:#2F303A;
+    color: var(--title-white-color);        
     text-align: center;
+    line-height: 1.36;
+    text-transform: uppercase;
 }
 
 .order-btn {
     background-color: var(--accent-color);
     color:var(--title-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
 }
 .hidden-descr {
     display: none;
@@ -80,62 +90,74 @@ footer .logo-studio{
     font-weight: 700;
     font-size: 14px;
     color: var(--title-text-color);
+    line-height: 1.14;
 }
 .descr p {
     font-weight: 400;
     font-size: 14px;
     color: var(--primary-text-color);
+    line-height: 1.71;
 }
-.samples h2 {
+.samples h2, .team h2 {
     font-weight: 700;
     font-size: 36px;
     color: var(--title-text-color);
     text-align: center;
+    line-height: 1.16;
 }
-.team h2 {
-    font-weight: 700;
-    font-size: 36px;
-    color: var(--title-text-color);
-    text-align: center;
-}
+
 .team h3 {
     font-weight: 500;
     font-size: 16px;
     color: var(--title-text-color);
+    line-height: 1.18;
 }
 .team p {
     font-weight: 400;
     font-size: 16px;
     color: var(--primary-text-color);
+    line-height: 1.18;
 }
 footer {
     background-color: #2F303A;
+    line-height: 1.71;
 }
 .gm-adr {
     font-weight: 400;
     font-size: 14px;
     color: var(--title-white-color);
     font-style: normal;
+    text-decoration: none;
 }
 
-.contacts {
+.bottom-contacts {
     font-weight: 400;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+    text-decoration: none;
 }
 
 .sort button {
     background-color: var(--accent-color);
     color:var(--title-white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.galary a {
+    text-decoration: none;
 }
 .galary h2 {
     font-weight: 700;
     font-size: 18px;
     color: var(--title-text-color);
+    letter-spacing: 0.06em;
+    line-height: 2;
 }
 .galary p {
     font-weight: 400;
     font-size: 16px;
     color: var(--primary-text-color);
+    line-height: 1.87;
 }
