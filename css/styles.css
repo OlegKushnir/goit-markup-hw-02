@@ -5,6 +5,7 @@
     --title-white-color: #ffffff;
     --title-black-color: #000000;
     --dark-bgr:#2F303A;
+    --sort-bgr-btn:#F5F4FA;
 }
 body {
     font-family:Roboto, sans-serif;
@@ -150,12 +151,17 @@ footer {
 
 .sort button {
     font-family: inherit;
-    background-color: var(--accent-color);
-    color:var(--title-white-color);
+    background-color: var(--sort-bgr-btn);
+    color:var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+}
+
+.sort button:hover, .sort button:focus {
+    background-color: var(--accent-color);
+    color: var(--title-white-color);
 }
 
 .galary a {
